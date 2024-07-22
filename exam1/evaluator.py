@@ -128,7 +128,9 @@ def find_duplicates(tuple_in: Tuple) -> List:
     # create counter
     my_counts = Counter(tuple_in)
     # filter counts > 1
-    return [item fo item, count in mycounts.
+    # use for in comprehension?
+    # for item in counter if count > 1???
+    return [item for item, count in my_counts.items() if count > 1]
 
 
 
