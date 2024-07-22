@@ -18,7 +18,7 @@ Assume that the user’s input will indeed be in camel case.
 '''
 Now make one that does the opposite: snake2camel()
 '''
-
+#create function
 def camel2snake(camel_string):
     # empty string
     snake = ""
@@ -35,5 +35,18 @@ def camel2snake(camel_string):
     # print(snake)
     
     # pass
-def snake2camel():
+# create function    
+def snake2camel(snake_string):
+    # split string at "_"
+    # create a word list
+    words = snake_string.split('_')
+    # retuns a lis of words
+    # 'title' is syntax to capitalize first character in word
+    # join words starting at 0, capitalize each word
+    camel = words[0] + ''.join(word.title() for word in words[1:])
+    return(camel)
+     # print(camel)
+
+#     camel_convert_snake_case("dataEngineeringWithPython")
+#     snake_convert_camel_case("data_engineering_with_python")
     pass
