@@ -10,8 +10,16 @@ def generate_list(start: int, stop: int, step: int = 1) -> List[int]:
     :param step: How many digits apart each number is from the others around it.
     :return: A list of integers.
     """
+    # 
+    # parity?
+    # stop stop step
+    result = [i for i in range(start, stop, step)]
+    return result
     pass  # implement me
 
+    # if parity == Parity.ODD:
+    #     #if divisible by 2 (not odd)
+    #     return [i for i in range(start, stop) if i  % 2 != 0]
 
 def generate_list_with_strategy(start: int, stop: int, step: int, strategy: Callable) -> List[int]:
     """
