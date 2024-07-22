@@ -62,11 +62,11 @@ def drop_last_two(lst):
     This function takes a list and returns a list with the last two items removed.
     """
     # pop?
-    # lst.pop()
-    # lst.pop()
     # del lst[len(lst)]
     # del lst[len(lst)]
+     # n = 5
+    # can use n number of items if you replace 2 with n
     lst = lst[:len(lst)-2]
     return lst
-    pass  # implement me
+
 

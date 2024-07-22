@@ -37,6 +37,3 @@ def camel2snake(camel_string):
     # pass
 def snake2camel():
     pass
-
-
-    pass
