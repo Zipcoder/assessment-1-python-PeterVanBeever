@@ -65,8 +65,14 @@ def compare_two_numbers(a: N, b: N) -> int:
     :return: an integer 0, 1, or -1
     """
 
-    
-    pass  # implement me
+    if a == b:
+        return 0
+    elif a > b:
+        return 1
+    elif b > a:
+        return -1
+
+    # pass  # implement me
 
 
 def compare_two_strings(a: str, b: str) -> int:
