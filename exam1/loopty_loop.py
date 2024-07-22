@@ -31,4 +31,15 @@ def generate_list_with_strategy(start: int, stop: int, step: int, strategy: Call
     :param strategy: A function to manipulate each digit .
     :return: A list of integers.
     """
+    # 'strategy' = python syntax 
+    result = [i for i in range(start, stop, step)]
+    res_strategy = [strategy(i) for i in result]
+    return res_strategy
+
+# start value, number of values , increment,
+
+#             ((1, 5, 1, lambda x: x**2), [1, 4, 9, 16]),
+#             ((5, 10, 1, lambda x: x+5), [10, 11, 12, 13, 14]),
+#             ((100, 0, -25, lambda x: x/5), [20, 15, 10, 5]),
+#             ((100, 50, -10, lambda x: x-10), [90, 80, 70, 60, 50]),
     pass  # implement me

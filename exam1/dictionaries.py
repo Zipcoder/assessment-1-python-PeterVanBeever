@@ -16,6 +16,8 @@ def get_key_of_min_value(ddd):
     """
     Get the key of the minimum value from a dictionary
     """
+    # get min 
+    return min(ddd, key = ddd.get)
     pass
 
 def get_key_of_max_value(ddd):
