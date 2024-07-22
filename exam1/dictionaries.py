@@ -24,6 +24,7 @@ def get_key_of_max_value(ddd):
     """
     Get the key of the maximum value from a dictionary
     """
+    return max(ddd, key = ddd.get)
     pass
 
 def letterfreq(word):
