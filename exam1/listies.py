@@ -3,6 +3,11 @@ def drop_last(lst):
     """
     This function takes a list and returns a list with the last item removed.
     """
+    # use pop?
+    # return lst.pop()?
+    lst.pop()
+    # don't return pop()
+    return lst
     pass  # implement me
 
 def drop_mangle(lst):
