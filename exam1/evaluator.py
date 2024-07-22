@@ -105,7 +105,15 @@ def find_common(tuple_a: Tuple, tuple_b: Tuple) -> Set:
     :param tuple_b: The second tuple.
     :return: A set containing items common on both tuples.
     """
-    pass  # implement me
+
+    # sets remove duplicates
+    # convert to sets
+    eval_set_a = set(tuple_a)
+    eval_set_b = set(tuple_b)
+    # use set intersect
+    result = eval_set_a.intersection(eval_set_b)
+    return result
+    # pass  # implement me
 
 
 def find_duplicates(tuple_in: Tuple) -> List:
@@ -115,4 +123,13 @@ def find_duplicates(tuple_in: Tuple) -> List:
     :param tuple_in: A tuple
     :return: a A list containing duplicate items in the tuple_in parameter
     """
+
+    # use counter, greater than 1?
+    # create counter
+    my_counts = Counter(tuple_in)
+    # filter counts > 1
+    return [item fo item, count in mycounts.
+
+
+
     pass  # implement me
