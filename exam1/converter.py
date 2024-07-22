@@ -7,7 +7,10 @@ def meters_to_feet(meters: float) -> float:
     :param meters: A float representing a measurement in meters.
     :return: A float representing the input measurement converted to feet.
     """
-    
+    # converstion rate = 3.280839895
+    meter2feet = 3.280839895
+    # multiply/round
+    return round((meters * meter2feet),2)
     pass  # implement me
 
 
@@ -20,6 +23,12 @@ def feet_to_meters(feet: float) -> float:
     :param feet: A float representing a measurement in feet.
     :return: A float representing the input measurement converted to meters.
     """
+
+    # conversion rate 3.280839895
+    # divide 
+    feet2meter = (1/3.280839895)
+    # multiply/round
+    return round((feet * feet2meter), 2)
     pass  # implement me
 
 
