@@ -14,6 +14,14 @@ def drop_mangle(lst):
     """
     This function takes a list and returns a list with the first two items AND last item removed.
     """
+
+    # pop last
+    lst.pop()
+    # del
+    del lst[0]
+    # del lst[1] shifted?
+    del lst[0]
+    return lst
     pass  # implement me
 
 def add_item_front(lst, a):
