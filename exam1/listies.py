@@ -50,13 +50,23 @@ def drop_first_two(lst):
     """
     This function takes a list and returns a list with the first two items removed.
     """
-
+    # del twice
+    del lst[0]
+    # del lst[1]
+    del lst[0]
+    return lst
     pass  # implement me
 
 def drop_last_two(lst):
     """
     This function takes a list and returns a list with the last two items removed.
     """
-    
+    # pop?
+    # lst.pop()
+    # lst.pop()
+    # del lst[len(lst)]
+    # del lst[len(lst)]
+    lst = lst[:len(lst)-2]
+    return lst
     pass  # implement me
 
