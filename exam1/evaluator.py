@@ -1,5 +1,8 @@
 from typing import List, Tuple, Set, TypeVar
 
+# counter
+from collections import Counter
+
 N = TypeVar('N', int, float)
 C = TypeVar('C', List, Tuple)
 
@@ -23,6 +26,8 @@ def find_highest_value(list_in: List[N]) -> N:
     :param list_in: A list of numbers (integers and/or floats)
     :return: The highest number in the list
     """
+    #max
+    return (max(list_in))
     pass  # implement me
 
 
@@ -36,8 +41,16 @@ def find_value(value_to_find, values: C) -> int:
     :param values: A List or a Set.
     :return: an integer. Either the index where the value exists or -1
     """
-    pass  # implement me
+    # is instance check
+    # tuple!
 
+    if isinstance(values, (list,tuple)):
+        try:
+            return values.index(value_to_find)
+        except ValueError:
+            # exists or -1
+            return -1
+    # pass  # implement me
 
 def compare_two_numbers(a: N, b: N) -> int:
     """
@@ -51,6 +64,8 @@ def compare_two_numbers(a: N, b: N) -> int:
     :param b: The second number.
     :return: an integer 0, 1, or -1
     """
+
+    
     pass  # implement me
 
 
